@@ -26,6 +26,9 @@ function Navbar() {
       <Link to='/useHistory'>
         <h1>useHistory</h1>
       </Link>
+      <Link to='/useRef'>
+        <h1>useRef</h1>
+      </Link>
     </div>
   );
 }

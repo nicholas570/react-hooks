@@ -8,6 +8,7 @@ import DataFetching from './components/DataFetching';
 import ParamsHook from './components/ParamsHook';
 import CountersContainer from './components/CountersContainer';
 import HistoryHook from './components/HistoryHook';
+import UseRefHook from './components/UseRefHook';
 
 export default function Router() {
   return (
@@ -20,6 +21,7 @@ export default function Router() {
         <Route path='/useParams/:random' component={ParamsHook} />
         <Route path='/custom-hook' component={CountersContainer} />
         <Route path='/useHistory' component={HistoryHook} />
+        <Route path='/useRef' component={UseRefHook} />
       </Switch>
     </div>
   );
