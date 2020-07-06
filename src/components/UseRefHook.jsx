@@ -1,7 +1,8 @@
-import React, { useEffect, useRef } from 'react';
+import React, { useState, useEffect, useRef } from 'react';
 
 function UseRefHook() {
-  const input = useRef(null);
+  const [state, setState] = useState();
+  const input = useRef(0);
   const counter = useRef({ count: 0 });
 
   useEffect(() => {
@@ -10,13 +11,15 @@ function UseRefHook() {
 
   const handleCLick = (e) => {
     counter.current.count++;
-    console.log(input.current.value, counter.current.count);
+    console.log(counter.current.count);
+    setState(input.current.value);
   };
 
   return (
     <div>
       <input type='text' ref={input} />
       <button onClick={handleCLick}>Get the value</button>
+      <h3>{state}</h3>
     </div>
   );
 }

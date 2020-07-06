@@ -9,6 +9,7 @@ import ParamsHook from './components/ParamsHook';
 import CountersContainer from './components/CountersContainer';
 import HistoryHook from './components/HistoryHook';
 import UseRefHook from './components/UseRefHook';
+import UseContextHook from './components/UseContextHook';
 
 export default function Router() {
   return (
@@ -22,6 +23,7 @@ export default function Router() {
         <Route path='/custom-hook' component={CountersContainer} />
         <Route path='/useHistory' component={HistoryHook} />
         <Route path='/useRef' component={UseRefHook} />
+        <Route path='/useContext' component={UseContextHook} />
       </Switch>
     </div>
   );

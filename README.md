@@ -2,6 +2,8 @@
 
 - useState
 - useEffect
+- useContext
+- useRef
 - custom hooks
 - useHistory
 - useLocation
