@@ -7,3 +7,4 @@
 - custom hooks
 - useHistory
 - useLocation
+- useParams
